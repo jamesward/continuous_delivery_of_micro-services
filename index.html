@@ -93,80 +93,69 @@
     <h2>Agenda</h2>
     <ol>
         <li><a href="#/2">Continuous Delivery</a></li>
-        <li><a href="#/3">Scalable Deployment Process</a></li>
-        <li><a href="#/4">Micro-Services</a></li>
-        <li><a href="#/5">Get There</a></li>
+        <li><a href="#/3">Micro-Services</a></li>
+        <li><a href="#/4">Get There</a></li>
+        <li><a href="#/5">Scalable Deployment Process</a></li>
         <li><a href="#/6">What Will Hurt</a></li>
     </ol>
 </section>
 
 <section>
-        <h2>Continuous Delivery</h2>
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-        <script type="text/javascript">
-            google.load("visualization", "1", {packages:["corechart"]});
-            google.setOnLoadCallback(drawChart);
-            function drawChart() {
-                var data = google.visualization.arrayToDataTable([
-                    ['', 'Traditional Delivery', 'Continuous Delivery'],
-                    ['',  0, 0],
-                    ['',  0, 0],
-                    ['',  0, 3],
-                    ['',  0, 2],
-                    ['',  0, 1],
-                    ['',  10, 0],
-                    ['',  8, 0],
-                    ['',  6, 3],
-                    ['',  4, 2],
-                    ['',  2, 1],
-                    ['',  0, 0],
-                    ['',  0, 0],
-                    ['',  0, 3],
-                    ['',  0, 2],
-                    ['',  0, 1],
-                    ['',  0, 0],
-                    ['',  0, 0],
-                    ['',  0, 3],
-                    ['',  0, 2],
-                    ['',  0, 1],
-                    ['',  10, 0],
-                    ['',  8, 0],
-                    ['',  6, 3],
-                    ['',  4, 2],
-                    ['',  2, 1],
-                    ['',  0, 0],
-                    ['',  0, 0],
-                    ['',  0, 3],
-                    ['',  0, 2],
-                    ['',  0, 1],
-                    ['',  0, 0],
-                    ['',  0, 0]
-                ]);
+    <h2>Continuous Delivery</h2>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['', 'Traditional Delivery', 'Continuous Delivery'],
+                ['',  0, 0],
+                ['',  0, 0],
+                ['',  0, 3],
+                ['',  0, 2],
+                ['',  0, 1],
+                ['',  10, 0],
+                ['',  8, 0],
+                ['',  6, 3],
+                ['',  4, 2],
+                ['',  2, 1],
+                ['',  0, 0],
+                ['',  0, 0],
+                ['',  0, 3],
+                ['',  0, 2],
+                ['',  0, 1],
+                ['',  0, 0],
+                ['',  0, 0],
+                ['',  0, 3],
+                ['',  0, 2],
+                ['',  0, 1],
+                ['',  10, 0],
+                ['',  8, 0],
+                ['',  6, 3],
+                ['',  4, 2],
+                ['',  2, 1],
+                ['',  0, 0],
+                ['',  0, 0],
+                ['',  0, 3],
+                ['',  0, 2],
+                ['',  0, 1],
+                ['',  0, 0],
+                ['',  0, 0]
+            ]);
 
-                var options = {
-                    hAxis: {title: 'Time', textPosition: 'none'},
-                    vAxis: {title: 'Risk', textPosition: 'none'},
-                    tooltip: {trigger: 'none'},
-                    legend: {position: 'top', alignment: 'center'}
-                };
+            var options = {
+                hAxis: {title: 'Time', textPosition: 'none'},
+                vAxis: {title: 'Risk', textPosition: 'none'},
+                tooltip: {trigger: 'none'},
+                legend: {position: 'top', alignment: 'center'}
+            };
 
-                var chart = new google.visualization.AreaChart(document.getElementById('cd-chart'));
-                chart.draw(data, options);
-            }
-        </script>
-        <div id="cd-chart" style="width: 900px; height: 400px; margin-bottom: 15px;"></div>
-        <h3 class="inverted">Goals: Deliver Faster &amp; Reduce Risk</h3>
-  </section>
-
-<section>
-  <h3 class="inverted">Scalable Deployment Process</h3>
-  <br/>
-
-  <pre                 >        Dev ->                                              Prod</pre>
-  <pre class="fragment">        Dev -> PR ->                    Merge ->            Prod</pre>
-  <pre class="fragment">        Dev -> PR -> CI              -> Merge ->            Prod</pre>
-  <pre class="fragment">        Dev -> PR -> CI + Review App -> Merge ->            Prod</pre>
-  <pre class="fragment">        Dev -> PR -> CI + Review App -> Merge -> Staging -> Prod</pre>
+            var chart = new google.visualization.AreaChart(document.getElementById('cd-chart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <div id="cd-chart" style="width: 900px; height: 400px; margin-bottom: 15px;"></div>
+    <h3 class="inverted">Goals: Deliver Faster &amp; Reduce Risk</h3>
 </section>
 
 <section>
@@ -210,6 +199,17 @@
     <li class="fragment">DevOps</li>
   </ul>
 
+</section>
+
+<section>
+  <h3 class="inverted">Scalable Deployment Process</h3>
+  <br/>
+
+  <pre                 >        Dev ->                                              Prod</pre>
+  <pre class="fragment">        Dev -> PR ->                    Merge ->            Prod</pre>
+  <pre class="fragment">        Dev -> PR -> CI              -> Merge ->            Prod</pre>
+  <pre class="fragment">        Dev -> PR -> CI + Review App -> Merge ->            Prod</pre>
+  <pre class="fragment">        Dev -> PR -> CI + Review App -> Merge -> Staging -> Prod</pre>
 </section>
 
 <section>
